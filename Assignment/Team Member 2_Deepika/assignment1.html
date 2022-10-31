@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+   <html lang="en">
+   
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>ASSIGNMENT_1</title>
+       <script>
+           function onClick() {
+               
+               var name = document.getElementById("Name").value;
+               var email = document.getElementById("Email").value;
+               var qualification = document.getElementById("Qualification").value;
+               var age = document.getElementById("Age").value;
+               document.getElementById("name").innerHTML = "Name : " + name;
+               document.getElementById("email").innerHTML = "Email : " + email;
+               document.getElementById("qualification").innerHTML = "Qualification : " + qualification;
+               document.getElementById("age").innerHTML = "Age : " + age;
+   
+           }
+       </script>
+   </head>
+   
+   <body>
+    <h1>ASSIGNMENT_1</h1>
+       <form>
+           <label>NAME:</label>
+           <input type="text" name="Name" id="Name"><br><br>
+           <label>EMAIL:</label>
+           <input type="text" name="Email" id="Email"><br><br>
+           <label>QUALIFICATION:</label>
+           <input type="text" name="Qualification" id="Qualification"><br><br>
+           <label>AGE:</label>
+           <input type="text" name="Age" id="Age"><br><br>
+           <input type="button" value="Submit" id="btnSubmit" onclick="onClick()">
+       </form>
+       <div>
+           <p id="name"></p>
+           <p id="email"></p>
+           <p id="qualification"></p>
+           <p id="age"></p>
+       </div>
+   </body>
+   
+</html>
